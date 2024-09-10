@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Визитка, Александр Останин, связь со мной">
+    <meta name="description" content="Написать письмо">
+    <title>Визитка - связь со мной</title>
+    <link rel="icon" href="images/аватарка.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/contacts.css">
+</head>
+<body>
+    <header><h1>Останин Александр Денисович</h1></header>
+        <form class="feedback" method="post">
+            <h2>Написать мне</h2>
+        
+            <label class="pure-material-textfield-outlined">
+                <input placeholder="Имя отправителя" type="text" name="firstname" id="firstname" required>
+            </label>
+        
+            <label class="pure-material-textfield-outlined">
+                <input placeholder="Email" type="email" name="email" id="email" required>
+            </label>
+        
+            <label class="pure-material-textfield-outlined">
+                <input placeholder="Телефон (+7 *** *** ** **)" type="tel" id="tel" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required>
+            </label>
+          
+            <h3 class="form">Как обращаться к пользователю в дальнейшем?</h3>
+            <label class="pure-material-radio">
+                <input type="radio" name="type" id="man" required>
+                <span>Уважаемый</span>
+            </label>
+        
+            <label class="pure-material-radio">
+                <input type="radio" name="type" id="woman" required>
+                <span>Уважаемая</span>
+            </label>
+            <h3 class="form">Тема письма:</h3>
+            <label class="pure-material-select">
+                <select name="topic" id="topic">
+                    <option value="1">Жалоба</option>
+                    <option value="2">Предложения</option>
+                    <option value="3">Дружба</option>
+                    <option value="4">Совместный проект</option>
+                </select>
+            </label>
+          
+            <h3 class="form">Введите ваше сообщение:</h3>
+            <label class="pure-material-textarea" id="textarea">
+                <textarea name="text"></textarea>
+            </label>
+          
+            <label class="pure-material-checkbox">
+                <input type="checkbox" id="checkbox" required>
+                <span class="perdan">Согласие на обработку персональных данных</span>
+            </label>
+        
+            <button class="pure-material-button-contained" type="submit">Отправить письмо</button>
+        </form>
+    <footer>
+        <a href="https://vk.com/ostankins">Я в Вконтаке</a> <!-- Ссылки на другие страницы, соцсети -->
+        <a href="index.html">Главная</a>
+        <a href="interests.html">Увлечения</a>
+        <a href="contacts.html">Контакты</a>
+    </footer>
+</body>
+</html>
