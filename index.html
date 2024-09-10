@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Солнце с анимацией</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="800" height="600"></canvas>
+
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+
+        let sunX = 330;
+        let sunY = 100;
+        let angle = 0;
+        let isMoving = false;
+
+        function drawSun() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Рисуем небо
+            ctx.fillStyle = 'skyblue';
+            ctx.fillRect(0, 0, canvas.width, canvas.height / 2);
+
+            // Рисуем блики от солнца
+            ctx.beginPath();
+            ctx.arc(sunX + 15, sunY - 15, 20, 0, Math.PI * 2);
+            ctx.fillStyle = 'rgba(255, 247, 194, 0.5)';
+            ctx.fill();
+
+            // Рисуем блики от солнца
+            ctx.beginPath();
+            ctx.arc(sunX - 15, sunY + 15, 25, 0, Math.PI * 2);
+            ctx.fillStyle = 'rgba(247, 239, 166, 0.5)';
+            ctx.fill();
+
+            // Рисуем солнце
+            ctx.beginPath();
+            ctx.arc(sunX, sunY, 30, 0, Math.PI * 2);
+            ctx.fillStyle = 'yellow';
+            ctx.fill();
+
+            // Рисуем блики на солнце
+            ctx.beginPath();
+            ctx.arc(sunX + 15, sunY - 15, 5, 0, Math.PI * 2);
+            ctx.fillStyle = 'white';
+            ctx.fill();
+            
+            // Рисуем блики от солнца
+            ctx.beginPath();
+            ctx.arc(sunX + 15, sunY + 25, 25, 0, Math.PI * 2);
+            ctx.fillStyle = 'rgba(247, 239, 166, 0.2)';
+            ctx.fill();
+
+            // Рисуем блики от солнца
+            ctx.beginPath();
+            ctx.arc(sunX - 15, sunY - 25, 25, 0, Math.PI * 2);
+            ctx.fillStyle = 'rgba(247, 239, 166, 0.2)';
+            ctx.fill();
+
+            // Рисуем траву
+            ctx.fillStyle = 'green';
+            ctx.fillRect(0, canvas.height / 2, canvas.width, canvas.height / 2);
+
+            // Движение и вращение солнца
+            if (isMoving) {
+                angle += 0.01;
+                sunX = 120 + 200 * Math.cos(angle);
+                sunY = 120 + 250 * Math.sin(angle);
+            }
+
+            requestAnimationFrame(drawSun);
+        }
+
+        // Обработчик нажатия кнопки
+        document.addEventListener('keydown', function(event) {
+            if (event.key === ' ') { // Пробел для включения/выключения движения
+                isMoving = !isMoving;
+            }
+        });
+
+        drawSun();
+    </script>
+</body>
+</html>
