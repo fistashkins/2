@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Suez+One');
+
+:root {
+    --pure-material-primary-rgb: 255, 191, 0;
+    --pure-material-onsurface-rgb: 0, 0, 0;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url("https://res.cloudinary.com/finnhvman/image/upload/v1541930411/pattern.png");
+}
+
+.feedback {
+    position: relative;
+    border-radius: 8px;
+    padding: 16px 48px;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    background-color: white;
+}
+
+h1 {
+    margin: 32px 0;
+    font-family: "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system;
+    font-weight: normal;
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    margin: 32px 0;
+    font-family: "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system;
+    font-weight: normal;
+    text-align: center;
+}
+
+h3 {
+    margin: 32px 0;
+    font-family: "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system;
+    font-weight: normal;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 24px 0;
+    width: 370px;
+}
+
+option {
+    margin: 32px 0;
+    font-family: "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system;
+    font-weight: normal;
+    text-align: left;
+    font-size: large;
+}
+
+#topic {
+    margin: 32px 0;
+    font-family: "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system;
+    font-weight: normal;
+    text-align: left;
+    font-size: large;
+    display: block;
+    margin: 24px 0;
+    width: 370px;
+    height: 50px;
+}
+
+button {
+    display: block !important;
+    margin: 32px auto;
+    font-family: "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system;
+    font-weight: normal;
+    text-align: center;
+    font-size: large;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    background-color: rgb(255, 191, 0);
+    border: 1px solid #666;
+    height: 50px;
+    width: 200px;
+}
+
+footer {
+    background-color: black;
+    width: 98%;
+    padding: 1%;
+    border-top: 5px solid grey;
+    font-family:  'Roboto Slab';
+    flex: 0 0 auto;
+}
+
+a {
+    color: rgb(255, 191, 0);
+    text-decoration: none;
+    transition: all.6s ease;
+}
+
+a:hover {
+    color: rgb(0, 89, 255);
+    text-decoration: none;
+    transition: all.6s ease;
+}
+
+.pure-material-textfield-outlined::placeholder {
+    margin: 32px 0;
+    font-family: "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system;
+    font-weight: normal;
+    text-align: left;
+    color: rgb(0, 0, 0);
+}
+
+#firstname {
+    margin: 32px 0;
+    font-family: "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system;
+    font-weight: normal;
+    font-size: large;
+    text-align: left;
+    display: block;
+    margin: 24px 0;
+    width: 370px;
+    height: 50px;
+}
+
+#email {
+    margin: 32px 0;
+    font-family: "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system;
+    font-weight: normal;
+    font-size: large;
+    text-align: left;
+    display: block;
+    margin: 24px 0;
+    width: 370px;
+    height: 50px;
+}
+
+#tel {
+    margin: 32px 0;
+    font-family: "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system;
+    font-weight: normal;
+    font-size: large;
+    text-align: left;
+    display: block;
+    margin: 24px 0;
+    width: 370px;
+    height: 50px;
+}
+
+#man {
+    width: 18px;
+    height: 18px;
+}
+
+#woman {
+    width: 18px;
+    height: 18px;
+}
+
+span {
+    font-family: "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system;
+    font-weight: normal;
+    text-align: left;
+    font-size: medium;
+}
+
+#checkbox {
+    width: 18px;
+    height: 18px;
+    border-radius: 5px;
+}
+
+textarea {
+    font-family: "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system;
+    font-weight: normal;
+    font-size: large;
+    text-align: left;
+    width: 370px;
+    height: 225px;
+    border-radius: 5px;
+}
+
+header {
+    float: left;
+    background-color: black;
+    width: 99.4%;
+    height: 50%;
+    padding: 0.3%;
+    border-bottom: 5px solid grey;
+}
+
+.form {
+    margin: 32px 0;
+    font-family: "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system;
+    font-weight: normal;
+    text-align: center;
+}
+
+p {
+    margin: 24px 0;
+    font-family: "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system;
+    font-size: large;
+    text-align: center;
+}
+
+.video {
+    border-radius: 10px;
+}
+
+.ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+ul {
+    margin: 0 0;
+    font-family: "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system;
+    font-size: larger;
+    text-align: justify;
+    list-style-position: inside;
+}
+
+.item {
+    width: 450px;
+    height: 450px;
+    border: 1px solid black;
+    background-color: white;
+    box-sizing: border-box;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+.img>img {
+    border-radius: 5px;
+}
+
+.img {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.dan {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.information {
+    margin: 0 0;
+    font-family: "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system;
+    font-size: x-large;
+    text-align: center;
+}
+
